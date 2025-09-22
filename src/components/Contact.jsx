@@ -1,7 +1,7 @@
 import React from 'react'
-import emailIcon from '../assets/emailIcon.png'
-import linkedInIcon from '../assets/linkedInIcon.png'
-import githubIcon from '../assets/githubIcon.png'
+import { BiLogoGithub} from 'react-icons/bi'
+import { MdEmail} from 'react-icons/md'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -11,15 +11,15 @@ const Contact = () => {
             <h2>Contact</h2>
         <ul className='contact__links'>
             <li className='contact__link'>
-                <img src={emailIcon} alt="icon" />
+                <MdEmail size={30}/>
                 <a href="#">mohammedrogers579@gamil.com</a>
             </li>
             <li className='contact__link'>
-                <img src={linkedInIcon} alt="icon" />
+                <FaLinkedinIn size={30}/>
                 <a href="#">linkedin.com/rogers231</a>
             </li>
             <li className='contact__link'>
-                <img src={githubIcon} alt="icon" />
+                <BiLogoGithub size={30}/>
                 <a href="#">github.com/Rogers-17</a>
             </li>
         </ul>
